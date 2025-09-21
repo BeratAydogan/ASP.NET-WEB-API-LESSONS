@@ -31,7 +31,7 @@ namespace api.Data
                     Id ="Admin",
                     Name = "Admin",
                     NormalizedName = "ADMIN",
-                    ConcurrencyStamp= Guid.NewGuid().ToString()
+                    ConcurrencyStamp= "1"
 
                 },
                 new IdentityRole
@@ -39,7 +39,7 @@ namespace api.Data
                     Id="User",
                     Name = "User",
                     NormalizedName = "USER",
-                    ConcurrencyStamp= Guid.NewGuid().ToString()
+                    ConcurrencyStamp= "2"
 
 
                 },

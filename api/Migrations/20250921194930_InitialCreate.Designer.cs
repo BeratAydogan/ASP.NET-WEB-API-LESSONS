@@ -12,7 +12,7 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20250921191721_InitialCreate")]
+    [Migration("20250921194930_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -55,14 +55,14 @@ namespace api.Migrations
                         new
                         {
                             Id = "Admin",
-                            ConcurrencyStamp = "ff83d9d4-d030-48bf-af4d-3ae9fce43a08",
+                            ConcurrencyStamp = "1",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "User",
-                            ConcurrencyStamp = "323ff887-2f92-41be-bd59-20363669524d",
+                            ConcurrencyStamp = "2",
                             Name = "User",
                             NormalizedName = "USER"
                         });
