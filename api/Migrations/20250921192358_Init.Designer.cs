@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
@@ -11,9 +12,11 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    partial class ApplicationDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250921192358_Init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,14 +55,14 @@ namespace api.Migrations
                         new
                         {
                             Id = "Admin",
-                            ConcurrencyStamp = "d53d9d94-f8c7-4e86-a531-f2d0e486ee9d",
+                            ConcurrencyStamp = "f9c1bb55-defc-4291-b9dd-868477278927",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "User",
-                            ConcurrencyStamp = "ef098073-b439-4aae-9c43-990c9170d30a",
+                            ConcurrencyStamp = "565d8d2c-eb69-47b3-96db-7c824cb2a1f9",
                             Name = "User",
                             NormalizedName = "USER"
                         });
