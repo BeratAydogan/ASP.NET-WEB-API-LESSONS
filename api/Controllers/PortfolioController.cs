@@ -32,10 +32,10 @@ namespace api.Controllers
         public async Task<IActionResult> GetUserPortfolio()
         {
             var username = User.GetUsername();
-            var appUser = await _userManager.FindByIdAsync(username);
+            var appUser = await _userManager.FindByNameAsync(username);
             var userPortfolio = await _portfolioRepo.GetUserPortfolio(appUser);
             return Ok(userPortfolio);
-            
+
         }
     }
 }
